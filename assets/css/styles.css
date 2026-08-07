@@ -110,7 +110,6 @@ a:hover {
   width: 40px;
   border-radius: 8px;
   object-fit: cover;
-  background: var(--ia-white);
 }
 
 .brand:hover {
@@ -654,7 +653,6 @@ section.alt {
   height: 32px;
   width: 32px;
   border-radius: 6px;
-  background: var(--ia-white);
 }
 
 .site-footer p {
