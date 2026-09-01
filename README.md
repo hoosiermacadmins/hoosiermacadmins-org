@@ -27,6 +27,12 @@ Static site for [Hoosier Mac Admins](https://www.hoosiermacadmins.org), migrated
 
 Every page shares the same header/nav and footer markup (hand-duplicated, since this is a static, no-build site). All internal links and asset references use root-relative paths (e.g. `/about`, `/assets/css/styles.css`), so the site works correctly however deep a page sits in the folder structure.
 
+## Known follow-up: real event photos
+
+The nav/footer logo now uses a local placeholder (`assets/img/logo.svg`, matching the favicon's navy/gold star mark) and the three homepage event cards use a shared placeholder graphic (`assets/img/photo-placeholder.svg`) — the original `lh3.googleusercontent.com/sitesv/...` links from the Google Sites migration had expired (403, session-tied URLs) and couldn't be downloaded.
+
+Recommended next step: swap in real photos from past meetups. Save them into `assets/img/` (e.g. `assets/img/events/q3-2026-cookout.jpg`) and update the three `<img src>` references in `index.html` (search for `photo-placeholder.svg`). If a real logo file (not just the star mark) becomes available, replace `assets/img/logo.svg` and it'll propagate to every page automatically.
+
 ## Local preview
 
 No build tools needed — any static file server works:
